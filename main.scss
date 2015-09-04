@@ -1,0 +1,282 @@
+$dark-blue: #48637D;
+$light-blue: #6D839E;
+$orange: #DF550A;
+$tag1: #385252;
+$tag2: #6D839E;
+$tag3: #E79A20;
+$tag4: #746111;
+$grey: #ACACAC;
+$black: #25394B;
+$main-font: "Exo 2.0";
+$light-grey: #f6f6f6;
+$paper-height: 143px;
+
+//$tablet: "all and (min-width: 768px) and (max-width: 1240px)";
+//$phone: "all and (max-width: 320)";
+
+body{
+    font-family:$main-font;
+}
+
+nav{
+    height:60px;
+    width:100%;
+    background-color:$black;
+    padding:0px 15%;
+    position:fixed;
+    z-index: 1;
+    
+    #menu-icon{
+        color: white;
+        font-size:30px;
+        float: right;
+        margin-top:8px;
+    }
+    li{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    
+    ul{
+        display: inline-block;
+        float:right;
+    }
+    
+    a{
+        font-size: 14px;
+        color: white;
+        font-family:$main-font;
+        text-decoration: none;
+        position: relative;
+        float: right;
+        margin-top: 20px;
+    }
+    a:hover{
+        color: white;
+        text-decoration-line: underline;
+    }
+
+    .logo{
+        float: left;
+        font-family: Phosphate;
+        font-weight:inline;
+        font-size: 36px;
+        color: #DECC59;
+        margin-top:5px;
+        margin-left:0;        
+    } 
+    
+    #ure{
+        color:white;
+    }
+    .logo:hover{
+        text-decoration: none;
+        color: $orange;
+    }
+}
+.search{
+    padding: 40px 10%;
+    height:150px;
+    background-color:$dark-blue;
+    
+    text-align: center;
+    h1{
+        font-size: 24px;
+        font-weight: Medium;
+        padding-top:40px;
+        color:white;
+    }
+    .search-wrapper{
+        padding-top:30px;
+    }
+    input{
+        border-radius:8px;
+        border:none;
+        height:30px;
+        padding:0 20px;
+        margin-right:20px;
+        margin-top:20px;
+        width: 30%;
+    }
+    
+    .search-button{
+        margin-top:20px;
+        border-radius:8px;
+        border:none;
+        color:white;
+        background-color:$orange;
+        height:30px;
+        width: 100px;
+        padding:4px 10px;
+        text-transform: uppercase;
+    }
+    .search-button:hover{
+        background-color: #F75D0A;
+    }
+    .search-icon{
+        height:12px;
+        width:12px;
+        margin-bottom:4px;
+        margin-left:4px;
+    }
+    
+}
+
+.main-section{
+    height:100%;
+    background-color:$light-blue;
+    padding:40px 15%;
+    .listing-title{
+        color:white;
+        font-size:20px;
+    }
+    .update-time{
+        color:$grey;
+        font-size:20px;
+        font-weight: 100;
+    }
+
+    .job-post{
+        height:277px;
+        background-color:$light-grey;
+        border-radius: 8px;
+        margin:20px 0; 
+        padding:20px 60px;
+        .date-time{
+            font-size: 12px;
+            color: $grey;
+            margin-top:-10px;
+        }        
+        
+        .star{
+            font-size: 30px;
+            float: right;
+            margin-right:-40px;
+            margin-top: -10px;
+            color: $grey;
+        }
+
+        .job-title{
+            font-size:24px;
+            font-weight: 600;
+            margin-top:10px;
+        }
+        .dash{
+            margin-left:10px;
+        }
+        .company{
+            font-size: 18px;
+            font-weight:100;
+            text-decoration:underline;
+            color: $black;
+        }
+        button{
+            border-radius:13px;
+            border:none;
+            height: 25px;
+            padding: 0 12px;
+            margin-top:15px;
+            font-size: 12px;
+            margin-right: 5px;
+            color: white;   
+            outline:none;
+        }
+        .job-location{
+            background-color:$tag1;
+            }
+        .job-location:hover{
+            background-color:#496B6B;
+        }
+        .job-type{
+            background-color: $tag2;
+        }
+        .job-type:hover{
+            background-color: #7F98B8;
+        }
+        .job-level{
+            background-color: $tag3;
+        }
+        .job-level:hover{
+            background-color: #FFAB24;
+        }
+        .salary-range{
+            background-color: $tag4;   
+        }
+        .salary-range:hover{
+            background-color: #8C7415;  
+        }
+        .paper{
+            background-color: white;
+            margin-bottom: 0;
+            height: $paper-height;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            position:relative;
+            
+            .description-wrapper{
+                height:($paper-height)-70px;
+                overflow: hidden;
+                text-align: left;
+                font-family: open sans;
+            
+                h4{
+                font-size:14px;
+                font-weight:bold;
+                }
+                p{
+                font-size: 13px;
+                }
+                .apply-wrapper{
+                 text-align:center;   
+                }
+                .apply{
+                    border-radius: 8px;
+                    background-color: $orange;
+                    color:white;
+                    font-size:14px;
+                    height:40px;
+                    padding: 10px 20px;
+                    font-weight: 600;
+                    font-family: $main-font;
+//                    margin-left: 41.5%;
+                    
+                }
+                .apply:hover{
+                    background-color: #F75D0A;
+                }
+            }
+            .see-more{
+                background-color:transparent;
+                border: none;
+                text-transform:uppercase;
+                color: $orange;
+                font-size: 14px;
+                
+            }
+            .down-triangle{
+                font-size:8px;
+                margin: 0 10px;
+                color: $orange;
+            }
+        }
+    }
+}
+    
+
+
+
+
+
+@media all and (min-width: 768px)and(max-width: 1240px) {
+    nav{
+        ul{
+            display: none}
+        #menu-icon {
+				display: inline-block;
+			}
+    }
+}
+    
+    
+
