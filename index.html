@@ -7,13 +7,14 @@
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body ng-app="myApp">
     <nav>
         <a class="logo" href="#">CULT<span id="ure">URE</span></a>
         <div id="menu-icon">&#9776;</div>
@@ -36,24 +37,26 @@
             </button>
         </div>
     </div>
-    <div class="main-section">
+    <div class="main-section" ng-controller="MainController">
         <span class="listing-title">New Jobs in New York, NY</span>
-        <span class="update-time"> - Updated 8/18/2015 03:00PM</span>
-        <div class="job-post">
-            <span class="date-time">Posted 8/18/2015 02:30PM</span>
+        </span><span class="update-time"> - Updated 8/18/2015 03:00PM</span>
+        <div class="job-post" ng-repeat="job in jobs">
+            <span class="date-time">Posted {{job.dateTime}}</span>
             <span class="star">★</span>
             <br>
-            <span class="job-title">Associate Product Manager</span>
+            <span class="job-title">{{job.jobTitle}}</span>
             <span class="dash">-</span>
-            <a href = # class="company">FOURSQUARE</a>
+            <a href = # class="company">{{job.company}}</a>
             <br>
-            <button class="job-location">NEW YORK, NY</button>
-            <button class="job-type">FULL-TIME</button>
-            <button class="job-level">ENTRY-LEVEL</button>
-            <button class="salary-range">50K-70K</button>
+            <button class="job-location">{{job.jobLocation}}</button>
+            <button class="job-type">{{job.jobType}}</button>
+            <button class="job-level">{{job.jobLevel}}</button>
+            <button class="salary-range">{{job.salary}}</button>
             <div class="paper">
                 <div class="description-wrapper">
-                    <div class="description"><h4>About Foursquare:</h4><p>
+                    <div class="description" ng-bind-html="job.description">
+<!--
+<h4>About Foursquare:</h4><p>
 Foursquare helps you and your friends make the most of where you are. We're a small but highly ambitious company with millions of users worldwide relying on Foursquare to keep up with friends, discover what's nearby, save money and unlock deals. </p>
                        <p>
 
@@ -83,16 +86,15 @@ Passion for foursquare and location-based services
 Bonus points for experience developing mobile, social, local and/or gaming technologies
                         </p><p>
                         To apply, send us your resume and a quick note about why you’re passionate about building consumer products at Foursquare.</p>
+--></div>
                 <div class="apply-wrapper">
                     <button class="apply">APPLY NOW</button>
                         </div>
-                    </div></div>
+                    </div>
                 <button class="see-more"><span class="down-triangle">▼</span>  See More  <span class="down-triangle">▼</span></button>
             </div>    
         </div>
-        <div class="job-post"></div>
-        <div class="job-post"></div>
-        <div class="job-post"></div>
+ 
     </div>
     
 <script src="jquery-2.1.4.min.js"></script>  
@@ -102,53 +104,13 @@ Bonus points for experience developing mobile, social, local and/or gaming techn
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
     <script src="main.js"></script>
-    <script>
-//        functions!
-        cursorChange = function(element){
-            $(element).mouseover(function(){    
-                $(this).css('cursor','pointer');
-        });
-        }
-        cursorChange('.star');
-        
-        
-        $(document).ready(function(){
-            var i = 0;
-            var j = 0;
-            var t = 500;
-            $('.see-more').click(function(){    
-                if (i%2 ==0){
-                    var dHeight = $('.description').height();
-                    var mtop = $('.job-post').css('margin-top');
-                    $(this).parent().animate({height:dHeight+80},t);
-                    $('.description-wrapper').animate({height:dHeight+10},t);
-                    $('.see-more').html('<span class="down-triangle" style="color:#acacac">▲</span>  SEE LESS  <span class="down-triangle" style="color:#acacac">▲</span>');
-                    $('.see-more').css('color','#acacac');
-                    $(this).parent().parent().next().animate({'marginTop':dHeight-40},t);
-                }
-                else{
 
-                    $(this).parent().animate({height:'143px'},t);                            
-                    $('.description-wrapper').animate({height:'73px'},t);
-                    $('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
-                    $('.see-more').css('color','#DF550A');
-                    $(this).parent().parent().next().animate({'marginTop':20},t);
-                }
-                i++;
-                });
-            $('.star').click(function(){
-                if (j%2 ==0){
-                    $(this).css('color','#DF550A');
-                }
-                else{
-                    $(this).css('color','#ACACAC');
-                }
-                j++;
-            });
-        });
-    
-    </script>    
-     
+    <script src="angular.min.js"></script>
+        <!-- Modules -->
+    <script src="app.js"></script>
+
+    <!-- Controllers -->
+    <script src="MainController.js"></script>
 
 </body>
 </html>

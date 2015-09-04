@@ -7,19 +7,20 @@ $tag3: #E79A20;
 $tag4: #746111;
 $grey: #ACACAC;
 $black: #25394B;
-$main-font: "Exo 2.0";
+$main-font: 'Ubuntu', sans-serif;
 $light-grey: #f6f6f6;
-$paper-height: 143px;
-
-//$tablet: "all and (min-width: 768px) and (max-width: 1240px)";
-//$phone: "all and (max-width: 320)";
+$paper-height: 145px;
+$light: 300;
+$bold: 400;
+$tablet: "all and (min-width: 768px) and (max-width: 1240px)";
+$phone: "all and (max-width: 320)";
 
 body{
     font-family:$main-font;
 }
 
 nav{
-    height:60px;
+    height:40px;
     width:100%;
     background-color:$black;
     padding:0px 15%;
@@ -28,9 +29,10 @@ nav{
     
     #menu-icon{
         color: white;
-        font-size:30px;
+        font-size:24px;
         float: right;
-        margin-top:8px;
+        margin-top:4px;
+        display:none;
     }
     li{
         display: inline-block;
@@ -49,7 +51,8 @@ nav{
         text-decoration: none;
         position: relative;
         float: right;
-        margin-top: 20px;
+        margin-top: 10px;
+        font-weight: $light;
     }
     a:hover{
         color: white;
@@ -60,9 +63,9 @@ nav{
         float: left;
         font-family: Phosphate;
         font-weight:inline;
-        font-size: 36px;
+        font-size: 30px;
         color: #DECC59;
-        margin-top:5px;
+        margin-top:0;
         margin-left:0;        
     } 
     
@@ -76,18 +79,12 @@ nav{
 }
 .search{
     padding: 40px 10%;
-    height:150px;
+    height:130px;
     background-color:$dark-blue;
-    
     text-align: center;
-    h1{
-        font-size: 24px;
-        font-weight: Medium;
-        padding-top:40px;
-        color:white;
-    }
+    
     .search-wrapper{
-        padding-top:30px;
+        padding-top:10px;
     }
     input{
         border-radius:8px;
@@ -97,6 +94,8 @@ nav{
         margin-right:20px;
         margin-top:20px;
         width: 30%;
+        font-weight:300;
+        
     }
     
     .search-button{
@@ -126,13 +125,14 @@ nav{
     height:100%;
     background-color:$light-blue;
     padding:40px 15%;
+    
     .listing-title{
         color:white;
-        font-size:20px;
+        font-size:18px;
     }
     .update-time{
         color:$grey;
-        font-size:20px;
+        font-size:14px;
         font-weight: 100;
     }
 
@@ -154,10 +154,11 @@ nav{
             margin-right:-40px;
             margin-top: -10px;
             color: $grey;
+            transition-duration: .2s;
         }
 
         .job-title{
-            font-size:24px;
+            font-size:22px;
             font-weight: 600;
             margin-top:10px;
         }
@@ -169,6 +170,7 @@ nav{
             font-weight:100;
             text-decoration:underline;
             color: $black;
+            text-transform: uppercase;
         }
         button{
             border-radius:13px;
@@ -183,24 +185,28 @@ nav{
         }
         .job-location{
             background-color:$tag1;
+            text-transform: uppercase;
             }
         .job-location:hover{
             background-color:#496B6B;
         }
         .job-type{
             background-color: $tag2;
+            text-transform: uppercase;
         }
         .job-type:hover{
             background-color: #7F98B8;
         }
         .job-level{
             background-color: $tag3;
+            text-transform: uppercase;
         }
         .job-level:hover{
             background-color: #FFAB24;
         }
         .salary-range{
-            background-color: $tag4;   
+            background-color: $tag4;
+            text-transform: uppercase;
         }
         .salary-range:hover{
             background-color: #8C7415;  
@@ -210,12 +216,12 @@ nav{
             margin-bottom: 0;
             height: $paper-height;
             margin-top: 20px;
-            padding: 20px;
+            padding: 10px 20px;
             text-align: center;
             position:relative;
             
             .description-wrapper{
-                height:($paper-height)-70px;
+                height:($paper-height)-42px;
                 overflow: hidden;
                 text-align: left;
                 font-family: open sans;
@@ -228,7 +234,7 @@ nav{
                 font-size: 13px;
                 }
                 .apply-wrapper{
-                 text-align:center;   
+                    text-align:center;  
                 }
                 .apply{
                     border-radius: 8px;
@@ -239,7 +245,6 @@ nav{
                     padding: 10px 20px;
                     font-weight: 600;
                     font-family: $main-font;
-//                    margin-left: 41.5%;
                     
                 }
                 .apply:hover{
@@ -252,7 +257,11 @@ nav{
                 text-transform:uppercase;
                 color: $orange;
                 font-size: 14px;
+                margin-top: 0px;
                 
+            }
+            .see-less{
+                margin-top:10px;
             }
             .down-triangle{
                 font-size:8px;
@@ -268,7 +277,7 @@ nav{
 
 
 
-@media all and (min-width: 768px)and(max-width: 1240px) {
+@media all and (max-width: 768px) {
     nav{
         ul{
             display: none}
