@@ -43,6 +43,7 @@
         <span class="listing-title">New Jobs in New York, NY</span>
         </span><span class="update-time"> - Updated 8/18/2015 03:00PM</span>
         <div class="job-post" ng-repeat="job in jobs">
+         
             <span class="date-time">Posted {{job.dateTime}}</span>
             <span class="star">★</span>
             <br>
@@ -57,50 +58,20 @@
             <div class="paper">
                 <div class="description-wrapper">
                     <div class="description" ng-bind-html="job.description">
-<!--
-<h4>About Foursquare:</h4><p>
-Foursquare helps you and your friends make the most of where you are. We're a small but highly ambitious company with millions of users worldwide relying on Foursquare to keep up with friends, discover what's nearby, save money and unlock deals. </p>
-                       <p>
-
-To thrive as a member of Team Foursquare, you must embrace our exciting work-hard, play-hard environment. We're not afraid to move fast and break things as we release, launch, iterate, update and announce -- sometimes all in the same day. We're a closely-knit team and, especially at the end of a long day over beers, we feel like we're inventing the future together.
-                        </p>
-                       
-                        <h4>
-                            Consumer Products at Foursquare:</h4><p>
-
-Foursquare’s mission is to help you make the most of where you are. The big question is how. Is it by being more social, with better ways to keep up with your friends? Or do we focus on motivation, getting people exploring more? What about fun; should we reward people for experiencing new things? As our next PM, you get to help us answer these questions and come up with new ways for people to discover what’s around them. 
-                        </p>
-                        <h4>
-                            Responsibilities:</h4><p>
-Understand and analyze user needs through user studies, market research, and data analysis
-Help define product vision and strategy, and build consensus among multiple teams like engineering, design, marketing, and business development.</p><p>
-Launch fast and iterate often with a team of the world-class engineers and designers
-Create and analyze metrics for products that you constantly use to evaluate success and come up with new product improvements
-                        </p>
-                        <h4>Requirements:</h4>
-                        <p>
-1-3 years experience in Product Management and / or Product Design developing Internet technologies 
-BA/BS in Computer Science, Interaction Design, or a related field (technical experience is required; while you won’t be writing code you should understand the technical implications of the product decisions you make)
-Experience designing simple and intuitive web/mobile user interfaces; ability to create examples through wire frames and mock ups</p><p>
-Demonstrated experience planning and executing large-scale projects
-Strong analytical, organizational, and communication skills (verbal & written).  
-Passion for foursquare and location-based services
-Bonus points for experience developing mobile, social, local and/or gaming technologies
-                        </p><p>
-                        To apply, send us your resume and a quick note about why you’re passionate about building consumer products at Foursquare.</p>
---></div>
+                    </div>
                 <div class="apply-wrapper">
                     <button class="apply">APPLY NOW</button>
+                    <button class="star-button">SAVE THIS</button>
                         </div>
                     </div>
                 <button class="see-more"><span class="down-triangle">▼</span>  See More  <span class="down-triangle">▼</span></button>
             </div>    
         </div>
- 
     </div>
+<div class="overlay"></div>
     
 <script src="jquery-2.1.4.min.js"></script>  
-    
+<script src="velocity.min.js"></script>
 
 
 <!-- Latest compiled and minified JavaScript -->
