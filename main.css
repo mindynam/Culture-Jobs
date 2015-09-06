@@ -238,13 +238,13 @@ nav {
       /* line 274, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .see-less {
         margin-top: 10px; }
-      /* line 277, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 280, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .down-triangle {
         font-size: 8px;
         margin: 0 10px;
         color: #DF550A; }
 
-/* line 288, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 291, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -257,10 +257,10 @@ nav {
   z-index: 1; }
 
 @media all and (max-width: 768px) {
-  /* line 303, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 306, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
   nav ul {
     display: none; }
-  /* line 305, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 308, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
   nav #menu-icon {
     display: inline-block; } }
 
