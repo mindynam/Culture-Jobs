@@ -37,6 +37,16 @@ nav{
     li{
         display: inline-block;
         margin-left: 30px;
+        a{
+            font-size: 14px;
+            color: white;
+            font-family:$main-font;
+            text-decoration: none;
+            position: relative;
+            float: right;
+            margin-top: 10px;
+            font-weight: $light;
+        }
     }
     
     ul{
@@ -44,16 +54,9 @@ nav{
         float:right;
     }
     
-    a{
-        font-size: 14px;
-        color: white;
-        font-family:$main-font;
-        text-decoration: none;
-        position: relative;
-        float: right;
-        margin-top: 10px;
-        font-weight: $light;
-    }
+    
+    
+
     a:hover{
         color: white;
         text-decoration-line: underline;
@@ -61,21 +64,11 @@ nav{
 
     .logo{
         float: left;
-        font-family: Phosphate;
-        font-weight:inline;
-        font-size: 30px;
-        color: #DECC59;
-        margin-top:0;
-        margin-left:0;        
+        height: 20px;
+        margin-top:10px;        
     } 
     
-    #ure{
-        color:white;
-    }
-    .logo:hover{
-        text-decoration: none;
-        color: $orange;
-    }
+   
 }
 .search{
     padding: 40px 10%;

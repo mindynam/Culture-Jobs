@@ -27,7 +27,7 @@ $(document).ready(function(){
         else{
             var dHeight = $('.description').height();
             var mtop = $('.job-post').css('margin-top');
-            $(this).parent().animate({height:dHeight+140},t);
+            $(this).parent().animate({height:dHeight+135},t);
             $(this).parent().children('.description-wrapper').animate({height:dHeight+80},t);
             $(this).html('<span class="down-triangle" style="color:#acacac">▲</span>  SEE LESS  <span class="down-triangle" style="color:#acacac">▲</span>');
             $(this).css('color','#acacac');
