@@ -144,13 +144,21 @@ nav{
             margin-top:-10px;
         }        
         
+
         .star{
             font-size: 30px;
             float: right;
             margin-right:-40px;
             margin-top: -10px;
-            color: $grey;
             transition-duration: .2s;
+        }
+        
+        .star-inactive{
+           color: $grey;
+        }
+        
+       .star-active{
+           color: $orange;
         }
 
         .job-title{
@@ -286,7 +294,8 @@ nav{
     }
 
 }
-    
+  
+
 
 .overlay{
     position: fixed;

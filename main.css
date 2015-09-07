@@ -113,30 +113,35 @@ nav {
       font-size: 12px;
       color: #ACACAC;
       margin-top: -10px; }
-    /* line 147, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 148, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .star {
       font-size: 30px;
       float: right;
       margin-right: -40px;
       margin-top: -10px;
-      color: #ACACAC;
       transition-duration: .2s; }
     /* line 156, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .star-inactive {
+      color: #ACACAC; }
+    /* line 160, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .star-active {
+      color: #DF550A; }
+    /* line 164, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-title {
       font-size: 22px;
       font-weight: 600;
       margin-top: 10px; }
-    /* line 161, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 169, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .dash {
       margin-left: 10px; }
-    /* line 164, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 172, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .company {
       font-size: 18px;
       font-weight: 100;
       text-decoration: underline;
       color: #25394B;
       text-transform: uppercase; }
-    /* line 171, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 179, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post button {
       border-radius: 13px;
       border: none;
@@ -147,35 +152,35 @@ nav {
       margin-right: 5px;
       color: white;
       outline: none; }
-    /* line 182, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 190, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-location {
       background-color: #385252;
       text-transform: uppercase; }
-    /* line 186, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 194, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-location:hover {
       background-color: #496B6B; }
-    /* line 189, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 197, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-type {
       background-color: #6D839E;
       text-transform: uppercase; }
-    /* line 193, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 201, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-type:hover {
       background-color: #7F98B8; }
-    /* line 196, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 204, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-level {
       background-color: #E79A20;
       text-transform: uppercase; }
-    /* line 200, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 208, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .job-level:hover {
       background-color: #FFAB24; }
-    /* line 203, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 211, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .salary-range {
       background-color: #746111;
       text-transform: uppercase; }
-    /* line 207, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 215, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .salary-range:hover {
       background-color: #8C7415; }
-    /* line 210, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 218, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
     .main-section .job-post .paper {
       background-color: white;
       margin-bottom: 0;
@@ -184,23 +189,23 @@ nav {
       padding: 10px 20px;
       text-align: center;
       position: relative; }
-      /* line 219, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 227, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .description-wrapper {
         height: 103px;
         overflow: hidden;
         text-align: left;
         font-family: open sans; }
-        /* line 225, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 233, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper h4 {
           font-size: 14px;
           font-weight: bold; }
-        /* line 229, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 237, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper p {
           font-size: 13px; }
-        /* line 232, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 240, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper .apply-wrapper {
           text-align: center; }
-        /* line 235, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 243, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper .apply {
           border-radius: 8px;
           background-color: #DF550A;
@@ -211,10 +216,10 @@ nav {
           font-weight: 600;
           font-family: "Ubuntu", sans-serif;
           margin-right: 10px; }
-        /* line 247, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 255, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper .apply:hover {
           background-color: #F75D0A; }
-        /* line 250, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 258, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper .star-button {
           border-radius: 8px;
           background-color: #ACACAC;
@@ -224,10 +229,10 @@ nav {
           padding: 10px 20px;
           font-weight: 600;
           font-family: "Ubuntu", sans-serif; }
-        /* line 261, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 269, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
         .main-section .job-post .paper .description-wrapper .star-button:hover {
           background-color: #c4c4c4; }
-      /* line 265, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 273, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .see-more {
         background-color: transparent;
         border: none;
@@ -235,16 +240,16 @@ nav {
         color: #DF550A;
         font-size: 14px;
         margin-top: 0px; }
-      /* line 274, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 282, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .see-less {
         margin-top: 10px; }
-      /* line 280, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 288, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
       .main-section .job-post .paper .down-triangle {
         font-size: 8px;
         margin: 0 10px;
         color: #DF550A; }
 
-/* line 291, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 300, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -257,10 +262,10 @@ nav {
   z-index: 1; }
 
 @media all and (max-width: 768px) {
-  /* line 306, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 315, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
   nav ul {
     display: none; }
-  /* line 308, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 317, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
   nav #menu-icon {
     display: inline-block; } }
 

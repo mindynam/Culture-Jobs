@@ -32,7 +32,7 @@
         <div class="search-wrapper">
 
             <input type="text" name="keyword" placeholder="Job Title / Keyword">
-            <input type="text" name="location" placeholder="Location">
+            <input type="text" name="location" placeholder="Location" value="New York, NY">
             <button class="search-button">
                 Search
                 <img src="search-icon.png" class="search-icon"/>
@@ -45,7 +45,7 @@
         <div class="job-post" ng-repeat="job in jobs">
          
             <span class="date-time">Posted {{job.dateTime}}</span>
-            <span class="star">★</span>
+            <span class="star star-inactive">★</span>
             <br>
             <span class="job-title">{{job.jobTitle}}</span>
             <span class="dash">-</span>

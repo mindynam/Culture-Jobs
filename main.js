@@ -23,7 +23,6 @@ var hideOverlay = function(x){
 $(document).ready(function(){
     cursorChange('#menu-icon');
     cursorChange('.star');
-    var j = 0;
     var t = 500;
 
 //    $(document).on("click", '.see-more', function(e){  
@@ -88,15 +87,15 @@ $(document).ready(function(){
     });
     
     
-    $(document).on("click", '.star', function(){
-        
-        if (j%2 ==0){
-            $(this).css('color','#DF550A');
+    $(document).on("click", '.star', function(){        
+        if ($(this).hasClass('star-active')){
+            $(this).removeClass('star-active');
+            $(this).addClass('star-inactive');
         }
         else {
-            $(this).css('color','#ACACAC');
+            $(this).removeClass('star-inactive');
+            $(this).addClass('star-active');
         }
-        j++;
     });
 });
 
