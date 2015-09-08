@@ -6,17 +6,17 @@ var cursorChange = function (element) {
 });
 }
 
-var showOverlay = function(x){
-    $(".overlay").insertAfter($(x).parent());
+var showOverlay = function(paper){
+    $(".overlay").insertAfter($(paper).parent());
     $(".overlay").show();
-    $(x).parent().css("z-index","2");
+    $(paper).parent().css("z-index","2");
         }
     
-var hideOverlay = function(x){
-    $(".overlay").insertAfter($(x).parent());
+var hideOverlay = function(paper){
+    $(".overlay").insertAfter($(paper).parent());
     $(".overlay").hide();
     setTimeout(function(){
-        $(x).parent().css("z-index","0");},500);
+        $(paper).parent().css("z-index","0");},500);
         }    
 
 
@@ -53,18 +53,21 @@ $(document).ready(function(){
 //            showOverlay($(this));
 //        }
 //    });
-//        
-    $(document).on("click", '.paper', function(e){  
+//       
+var getPaper = function(overlay){
+    return overlay.prev('.job-post').children('.paper');
+}
+    
+    $(document).on("click", '.paper', function(e){ 
         if ($(this).hasClass('expanded')){
-            $('body').css('overflow','auto');
-            $(this).velocity({height:'145px'},{duration:t-300, easing: "easeInSine"});                             $(this).css("overflow","hidden");
-            $(this).children('.description-wrapper').velocity({height:'103px'},{duration:t-300, easing: "easeInSine"});
-            $(this).children('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
-            $(this).children('.see-more').css('color','#DF550A');
-            $(this).removeClass('expanded');
-            $(this).children('.see-more').removeClass('see-less');
-            hideOverlay($(this));
-//            $(this).parent().parent().next().animate({'marginTop':20},t);
+//            $('body').css('overflow','auto');
+//            $(this).velocity({height:'145px'},{duration:t-300, easing: "easeInSine"});                             $(this).css("overflow","hidden");
+//            $(this).children('.description-wrapper').velocity({height:'103px'},{duration:t-300, easing: "easeInSine"});
+//            $(this).children('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
+//            $(this).children('.see-more').css('color','#DF550A');
+//            $(this).removeClass('expanded');
+//            $(this).children('.see-more').removeClass('see-less');
+//            hideOverlay($(this));
         }
         else{
             e.preventDefault();
@@ -86,6 +89,17 @@ $(document).ready(function(){
         }
     });
     
+    $(document).on("click", ".overlay", function(){
+        paper = getPaper($(this));
+        $('body').css('overflow','auto');
+        paper.velocity({height:'145px'},{duration:t-300, easing: "easeInSine"});                             paper.css("overflow","hidden");
+        paper.children('.description-wrapper').velocity({height:'103px'},{duration:t-300, easing: "easeInSine"});
+        paper.children('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
+        paper.children('.see-more').css('color','#DF550A');
+        paper.removeClass('expanded');
+        paper.children('.see-more').removeClass('see-less');
+        hideOverlay(paper); 
+});
     
     $(document).on("click", '.star', function(){        
         if ($(this).hasClass('star-active')){
