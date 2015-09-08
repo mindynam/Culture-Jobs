@@ -38,6 +38,11 @@ nav{
     li{
         display: inline-block;
         margin-left: 30px;
+        
+        #act{
+            text-decoration: underline;
+        }
+        
         a{
             font-size: 14px;
             color: white;
@@ -48,6 +53,7 @@ nav{
             margin-top: 10px;
             font-weight: $light;
         }
+
     }
     
     ul{
@@ -56,13 +62,17 @@ nav{
     }
     
     
-    
 
     a:hover{
         color: white;
         text-decoration-line: underline;
     }
-
+    
+    a:visited{
+        text-decoration-line:none;
+        color: white;
+    }
+    
     .logo{
         float: left;
         height: 20px;
