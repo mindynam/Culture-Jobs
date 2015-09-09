@@ -1,6 +1,7 @@
 // Variables
 
 var t = 500;
+var pHeight, wHeight;
 
 // Functions!
 var cursorChange = function (element) {
@@ -26,14 +27,14 @@ var hideOverlay = function (paper) {
 var closePaper = function (paper){
     $('body').css('overflow', 'auto');
     paper.velocity({
-        height: '145px'
+        height: pHeight
     }, {
         duration: t - 300,
         easing: "easeInSine"
     });
     paper.css("overflow", "hidden");
     paper.children('.description-wrapper').velocity({
-        height: '103px'
+        height: wHeight
     }, {
         duration: t - 300,
         easing: "easeInSine"
@@ -47,6 +48,9 @@ var closePaper = function (paper){
 
 
 $(document).ready(function () {
+    pHeight= $('.paper').css('height');
+    wHeight= $('.description-wrapper').css('height');
+    console.log(pHeight+" "+wHeight);
     cursorChange('#menu-icon');
     cursorChange('.star');
      
