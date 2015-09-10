@@ -275,11 +275,108 @@ nav {
   /* line 327, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
   nav #menu-icon {
     display: inline-block; }
-  /* line 333, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
-  .main-section .job-post .paper {
-    height: 121px; }
-    /* line 336, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
-    .main-section .job-post .paper .description-wrapper {
-      height: 85px; } }
+  /* line 332, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  .main-section .job-post {
+    height: 270px; }
+    /* line 334, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .job-title {
+      font-size: 18px; }
+    /* line 337, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .company {
+      font-size: 14px; }
+    /* line 340, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post button {
+      font-size: 10px;
+      padding: 0 10px; } }
+
+@media all and (max-width: 660px) {
+  /* line 357, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  nav {
+    padding: 0 10%; }
+    /* line 360, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    nav ul {
+      display: none; }
+    /* line 362, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    nav #menu-icon {
+      display: inline-block; }
+  /* line 367, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  .search input {
+    padding: 0 10px;
+    font-size: 12px; }
+  /* line 372, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  .main-section {
+    padding: 20px 10%;
+    text-align: center; }
+    /* line 376, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .listing-title {
+      font-size: 18px; }
+    /* line 380, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .update-time {
+      display: block;
+      font-size: 10px; }
+    /* line 384, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post {
+      height: 315px;
+      padding: 20px 20px; }
+      /* line 388, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .star {
+        position: absolute;
+        right: 60px; }
+      /* line 392, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .date-time {
+        font-size: 10px;
+        position: relative; }
+      /* line 397, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .job-title {
+        font-size: 18px;
+        margin: 0 20%; }
+      /* line 401, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .dash {
+        display: none; }
+      /* line 404, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .company {
+        margin: 0 20%;
+        font-size: 14px; }
+      /* line 408, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .tag-section {
+        text-align: center; }
+        /* line 411, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        .main-section .job-post .tag-section .tag-wrapper {
+          text-align: center;
+          width: 200px;
+          margin-top: 15px;
+          margin-left: calc(50% - 100px); }
+          /* line 416, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+          .main-section .job-post .tag-section .tag-wrapper button {
+            width: 100px;
+            font-size: 10px;
+            padding: 0 10px;
+            margin: 0;
+            margin-right: -5px;
+            border-radius: 0px; } }
+
+@media all and (max-width: 460px) {
+  /* line 449, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  .search {
+    height: 190px; }
+    /* line 451, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .search input {
+      width: 50%;
+      margin: 5px 20%; }
+    /* line 455, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .search .search-button {
+      margin-top: 15px; }
+  /* line 471, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  .main-section .job-post {
+    padding: 10px 10px; }
+    /* line 480, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .job-title {
+      margin: 0 0; }
+    /* line 507, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    .main-section .job-post .paper {
+      height: 155px; }
+      /* line 510, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      .main-section .job-post .paper .description-wrapper {
+        height: 110px; } }
 
 /*# sourceMappingURL=main.css.map */

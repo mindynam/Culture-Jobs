@@ -330,17 +330,195 @@ nav{
     }
     .main-section{    
         .job-post{
+            height: 270px;
+            .job-title{
+                font-size:18px;
+            }
+            .company{
+                font-size: 14px;
+            }
+            button{
+                font-size:10px;
+                padding: 0 10px;
+            }
             .paper{
-                height:121px;
-
+//                height:121px;
+                
                 .description-wrapper{
-                    height:85px;
+//                    height:85px;
+                    
                 }
             }
         }
     
     }
 }
+@media all and (max-width: 660px) {
+    nav{
+        padding: 0 10%;
+        
+        ul{
+            display: none}
+        #menu-icon {
+				display: inline-block;
+			}
+    }
+    .search{
+        input{
+            padding: 0 10px;
+            font-size: 12px;
+        }
+    }
+    .main-section{
+        padding: 20px 10%;
+        text-align: center;
+        
+        .listing-title{
+            font-size:18px;
+
+        }
+        .update-time{
+            display:block;
+            font-size:10px;
+        }
+        .job-post{
+            height: 315px;
+            padding: 20px 20px;
+            
+            .star{
+                position: absolute;
+                right: 60px;
+            }
+            .date-time{
+                font-size:10px;
+                position:relative;
+                
+            }
+            .job-title{
+                font-size:18px;
+                margin: 0 20%;
+            }
+            .dash{
+                display:none;
+            }
+            .company{
+                margin: 0 20%;
+                font-size: 14px;
+            }
+            .tag-section{
+                text-align: center;
+                
+                .tag-wrapper{
+                    text-align: center;
+                    width: 200px;
+                    margin-top:15px;
+                    margin-left: calc(50% - 100px);
+                    button{
+                        width:100px;
+                        font-size:10px;
+                        padding: 0 10px;
+                        margin:0;
+                        margin-right: -5px;
+                        border-radius:0px;
+                    }
+                }
+            }
+            .paper{
+//                height:121px;
+                
+                .description-wrapper{
+//                    height:85px;
+                    
+                }
+            }
+        }
     
+    }
+}
+
+@media all and (max-width: 460px) {
+//    nav{
+//        padding: 0 10%;
+//        
+//        ul{
+//            display: none}
+//        #menu-icon {
+//				display: inline-block;
+//			}
+//    }
+    .search{
+        height: 190px;
+        input{
+            width:50%;
+            margin:5px 20%;
+        }
+        .search-button{
+            margin-top:15px;
+        }
+    }
+    .main-section{
+//        padding: 20px 10%;
+//        text-align: center;
+//        
+//        .listing-title{
+//            font-size:18px;
+//
+//        }
+//        .update-time{
+//            display:block;
+//            font-size:10px;
+//        }
+        .job-post{
+            padding: 10px 10px;
+//            height: 315px;
+//            
+//            .date-time{
+//                font-size:10px;
+//                position:relative;
+//                
+//            }
+            .job-title{
+                margin: 0 0;
+            }
+//            .dash{
+//                display:none;
+//            }
+//            .company{
+//                font-size: 14px;
+//            }
+//            .tag-section{
+//                text-align: center;
+//                
+//                .tag-wrapper{
+//                    text-align: center;
+//                    width: 200px;
+//                    margin-top:15px;
+//                    margin-left: calc(50% - 100px);
+//                    button{
+//                        width:100px;
+//                        font-size:10px;
+//                        padding: 0 10px;
+//                        margin:0;
+//                        margin-right: -5px;
+//                        border-radius:0px;
+//                    }
+//                }
+//            }
+            .paper{
+                height:155px;
+
+                .description-wrapper{
+                    height:110px;
+                    
+                }
+            }
+        }
+//    
+    }
+}
+
+       
+    
+
     
 

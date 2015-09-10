@@ -50,7 +50,6 @@ var closePaper = function (paper){
 $(document).ready(function () {
     pHeight= $('.paper').css('height');
     wHeight= $('.description-wrapper').css('height');
-    console.log(pHeight+" "+wHeight);
     cursorChange('#menu-icon');
     cursorChange('.star');
      

@@ -51,10 +51,14 @@
             <span class="dash">-</span>
             <a href = # class="company">{{job.company}}</a>
             <br>
-            <button class="job-location">{{job.jobLocation}}</button>
-            <button class="job-type">{{job.jobType}}</button>
-            <button class="job-level">{{job.jobLevel}}</button>
-            <button class="salary-range">{{job.salary}}</button>
+            <div class="tag-section">
+                <div class="tag-wrapper">
+                    <button class="job-location">{{job.jobLocation}}</button>
+                    <button class="job-type">{{job.jobType}}</button>
+                    <button class="job-level">{{job.jobLevel}}</button>
+                    <button class="salary-range">{{job.salary}}</button>
+                </div>
+            </div>
             <div class="paper">
                 <div class="description-wrapper">
                     <div class="description" ng-bind-html="job.description">
