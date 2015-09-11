@@ -1,11 +1,5 @@
 app.controller('MainController', ['$scope','$sce', function($scope, $sce){
-//    $scope.jobTitle = 'Associate Product Manager';
-//    $scope.dateTime = '8/18/2015 02:30PM';
-//    $scope.company = 'Foursquare';
-//    $scope.jobLocation = 'New York, NY';
-//    $scope.jobType='Full-time';
-//    $scope.jobLevel='Entry-level';
-//    $scope.salary='50k-70k';
+
     $scope.jobs = [
         {jobTitle: 'Associate Product Manager',
          dateTime: '8/18/2015 02:30PM',

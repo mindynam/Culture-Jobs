@@ -1,9 +1,9 @@
-/* line 18, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 18, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
 body {
   font-family: "Ubuntu", sans-serif;
   height: 100%; }
 
-/* line 23, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 23, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
 nav {
   height: 40px;
   width: 100%;
@@ -11,21 +11,21 @@ nav {
   padding: 0px 15%;
   position: fixed;
   z-index: 3; }
-  /* line 31, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 31, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav #menu-icon {
     color: white;
     font-size: 24px;
     float: right;
     margin-top: 4px;
     display: none; }
-  /* line 38, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 38, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav li {
     display: inline-block;
     margin-left: 30px; }
-    /* line 42, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 42, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     nav li #act {
       text-decoration: underline; }
-    /* line 46, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 46, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     nav li a {
       font-size: 14px;
       color: white;
@@ -35,34 +35,34 @@ nav {
       float: right;
       margin-top: 10px;
       font-weight: 300; }
-  /* line 59, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 59, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav ul {
     display: inline-block;
     float: right; }
-  /* line 66, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 66, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav a:hover {
     color: white;
     text-decoration-line: underline; }
-  /* line 71, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 71, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav a:visited {
     text-decoration-line: none;
     color: white; }
-  /* line 76, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 76, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav .logo {
     float: left;
     height: 20px;
     margin-top: 10px; }
 
-/* line 84, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 84, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
 .search {
   padding: 40px 10%;
   height: 130px;
   background-color: #48637D;
   text-align: center; }
-  /* line 90, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 90, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search .search-wrapper {
     padding-top: 10px; }
-  /* line 93, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 93, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search input {
     border-radius: 8px;
     border: none;
@@ -72,7 +72,7 @@ nav {
     margin-top: 20px;
     width: 30%;
     font-weight: 300; }
-  /* line 105, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 105, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search .search-button {
     margin-top: 20px;
     border-radius: 8px;
@@ -83,31 +83,31 @@ nav {
     width: 100px;
     padding: 4px 10px;
     text-transform: uppercase; }
-  /* line 116, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 116, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search .search-button:hover {
     background-color: #F75D0A; }
-  /* line 119, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 119, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search .search-icon {
     height: 12px;
     width: 12px;
     margin-bottom: 4px;
     margin-left: 4px; }
 
-/* line 128, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 128, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
 .main-section {
   height: 100%;
   background-color: #6D839E;
   padding: 40px 15%; }
-  /* line 133, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 133, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section .listing-title {
     color: white;
     font-size: 18px; }
-  /* line 137, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 137, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section .update-time {
     color: #ACACAC;
     font-size: 14px;
     font-weight: 100; }
-  /* line 143, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 143, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section .job-post {
     height: 277px;
     background-color: #f6f6f6;
@@ -115,40 +115,40 @@ nav {
     margin: 20px 0;
     padding: 20px 60px;
     position: relative; }
-    /* line 151, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 151, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .date-time {
       font-size: 12px;
       color: #ACACAC;
       margin-top: -10px; }
-    /* line 158, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 158, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .star {
       font-size: 30px;
       float: right;
       margin-right: -40px;
       margin-top: -10px;
       transition-duration: .2s; }
-    /* line 166, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 166, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .star-inactive {
       color: #ACACAC; }
-    /* line 170, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 170, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .star-active {
       color: #DF550A; }
-    /* line 174, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 174, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-title {
       font-size: 22px;
       font-weight: 600;
       margin-top: 10px; }
-    /* line 179, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 179, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .dash {
       margin-left: 10px; }
-    /* line 182, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 182, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .company {
       font-size: 18px;
       font-weight: 100;
       text-decoration: underline;
       color: #25394B;
       text-transform: uppercase; }
-    /* line 189, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 189, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post button {
       border-radius: 13px;
       border: none;
@@ -159,35 +159,35 @@ nav {
       margin-right: 5px;
       color: white;
       outline: none; }
-    /* line 200, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 200, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-location {
       background-color: #385252;
       text-transform: uppercase; }
-    /* line 204, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 204, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-location:hover {
       background-color: #496B6B; }
-    /* line 207, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 207, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-type {
       background-color: #6D839E;
       text-transform: uppercase; }
-    /* line 211, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 211, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-type:hover {
       background-color: #7F98B8; }
-    /* line 214, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 214, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-level {
       background-color: #E79A20;
       text-transform: uppercase; }
-    /* line 218, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 218, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-level:hover {
       background-color: #FFAB24; }
-    /* line 221, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 221, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .salary-range {
       background-color: #746111;
       text-transform: uppercase; }
-    /* line 225, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 225, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .salary-range:hover {
       background-color: #8C7415; }
-    /* line 228, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 228, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .paper {
       background-color: white;
       margin-bottom: 0;
@@ -196,23 +196,23 @@ nav {
       padding: 10px 20px;
       text-align: center;
       position: relative; }
-      /* line 237, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 237, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .paper .description-wrapper {
         height: 103px;
         overflow: hidden;
         text-align: left;
         font-family: open sans; }
-        /* line 243, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 243, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper h4 {
           font-size: 14px;
           font-weight: bold; }
-        /* line 247, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 247, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper p {
           font-size: 13px; }
-        /* line 250, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 250, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper .apply-wrapper {
           text-align: center; }
-        /* line 253, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 253, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper .apply {
           border-radius: 8px;
           background-color: #DF550A;
@@ -223,10 +223,10 @@ nav {
           font-weight: 600;
           font-family: "Ubuntu", sans-serif;
           margin-right: 10px; }
-        /* line 265, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 265, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper .apply:hover {
           background-color: #F75D0A; }
-        /* line 268, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 268, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper .star-button {
           border-radius: 8px;
           background-color: #ACACAC;
@@ -236,10 +236,10 @@ nav {
           padding: 10px 20px;
           font-weight: 600;
           font-family: "Ubuntu", sans-serif; }
-        /* line 279, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 279, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .paper .description-wrapper .star-button:hover {
           background-color: #c4c4c4; }
-      /* line 283, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 283, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .paper .see-more {
         background-color: transparent;
         border: none;
@@ -247,16 +247,16 @@ nav {
         color: #DF550A;
         font-size: 14px;
         margin-top: 0px; }
-      /* line 292, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 292, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .paper .see-less {
         margin-top: 10px; }
-      /* line 298, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 298, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .paper .down-triangle {
         font-size: 8px;
         margin: 0 10px;
         color: #DF550A; }
 
-/* line 310, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+/* line 310, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -269,84 +269,107 @@ nav {
   z-index: 1; }
 
 @media all and (max-width: 768px) {
-  /* line 325, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 325, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #48637D;
+    opacity: .9;
+    display: none;
+    z-index: 1; }
+  /* line 341, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav ul {
-    display: none; }
-  /* line 327, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    text-align: center;
+    display: none;
+    float: none;
+    margin-top: 100px; }
+    /* line 346, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+    nav ul li {
+      display: block;
+      margin-left: -30px;
+      margin-top: 20px; }
+      /* line 350, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+      nav ul li a {
+        float: none;
+        font-size: 48px; }
+  /* line 356, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav #menu-icon {
     display: inline-block; }
-  /* line 332, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 361, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section .job-post {
     height: 270px; }
-    /* line 334, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 363, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-title {
       font-size: 18px; }
-    /* line 337, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 366, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .company {
       font-size: 14px; }
-    /* line 340, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 369, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post button {
       font-size: 10px;
       padding: 0 10px; } }
 
 @media all and (max-width: 660px) {
-  /* line 357, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 386, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   nav {
     padding: 0 10%; }
-    /* line 360, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 389, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     nav ul {
       display: none; }
-    /* line 362, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 391, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     nav #menu-icon {
       display: inline-block; }
-  /* line 367, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 396, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search input {
     padding: 0 10px;
     font-size: 12px; }
-  /* line 372, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 401, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section {
     padding: 20px 10%;
     text-align: center; }
-    /* line 376, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 405, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .listing-title {
       font-size: 18px; }
-    /* line 380, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 409, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .update-time {
       display: block;
       font-size: 10px; }
-    /* line 384, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 413, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post {
       height: 315px;
       padding: 20px 20px; }
-      /* line 388, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 417, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .star {
         position: absolute;
         right: 60px; }
-      /* line 392, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 421, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .date-time {
         font-size: 10px;
         position: relative; }
-      /* line 397, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 426, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .job-title {
         font-size: 18px;
         margin: 0 20%; }
-      /* line 401, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 430, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .dash {
         display: none; }
-      /* line 404, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 433, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .company {
         margin: 0 20%;
         font-size: 14px; }
-      /* line 408, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 437, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .tag-section {
         text-align: center; }
-        /* line 411, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+        /* line 440, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
         .main-section .job-post .tag-section .tag-wrapper {
           text-align: center;
           width: 200px;
           margin-top: 15px;
           margin-left: calc(50% - 100px); }
-          /* line 416, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+          /* line 445, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
           .main-section .job-post .tag-section .tag-wrapper button {
             width: 100px;
             font-size: 10px;
@@ -356,26 +379,29 @@ nav {
             border-radius: 0px; } }
 
 @media all and (max-width: 460px) {
-  /* line 449, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+  /* line 478, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .search {
-    height: 190px; }
-    /* line 451, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
-    .search input {
-      width: 50%;
-      margin: 5px 20%; }
-    /* line 455, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
-    .search .search-button {
-      margin-top: 15px; }
-  /* line 471, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    height: 210px; }
+    /* line 480, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+    .search .search-wrapper {
+      padding: 20px 0; }
+      /* line 483, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+      .search .search-wrapper input {
+        width: 250px;
+        margin: 5px 10%; }
+      /* line 487, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
+      .search .search-wrapper .search-button {
+        margin-top: 15px; }
+  /* line 504, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
   .main-section .job-post {
     padding: 10px 10px; }
-    /* line 480, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 513, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .job-title {
       margin: 0 0; }
-    /* line 507, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+    /* line 540, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
     .main-section .job-post .paper {
       height: 155px; }
-      /* line 510, /Users/mindynam/Documents/Front-End-101/FinalProjec/main.scss */
+      /* line 543, /Users/mindynam/Documents/Front-End-101/culture-jobs/main.scss */
       .main-section .job-post .paper .description-wrapper {
         height: 110px; } }
 

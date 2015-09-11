@@ -24,6 +24,19 @@ var hideOverlay = function (paper) {
     }, 500);
 }
 
+var showMenu = function(){
+    if ($(".menu-overlay").hasClass(".menu-active")){
+        $(".menu-overlay").fadeOut(t);
+        $(".menu-overlay").removeClass(".menu-active");
+        $("ul").fadeOut(t);
+        }
+    else{
+        $(".menu-overlay").fadeIn(t);
+        $(".menu-overlay").addClass(".menu-active");
+        $("ul").fadeIn(t);
+    }
+}
+
 var closePaper = function (paper){
     $('body').css('overflow', 'auto');
     paper.velocity({
@@ -52,11 +65,19 @@ $(document).ready(function () {
     wHeight= $('.description-wrapper').css('height');
     cursorChange('#menu-icon');
     cursorChange('.star');
-     
+
     var getPaper = function (overlay) {
         return overlay.prev('.job-post').children('.paper');
     }
-
+    var refreshMenu = function (){
+        if ($(window).width()>768){
+            $("ul").show();
+        }
+        else{
+            $("ul").hide();
+        }
+    }
+            
     $(document).on("click", '.paper', function (e) {
         if ($(this).hasClass('expanded')== false) {
             e.preventDefault();
@@ -66,9 +87,9 @@ $(document).ready(function () {
                 duration: t,
                 easing: "easeOutSine"
             });
-            var dHeight = ($(this).find('.description')).height();
-            var mtop = $('.job-post').css('margin-top');
-
+                var dHeight = ($(this).find('.description')).height();
+                var mtop = $('.job-post').css('margin-top');
+                
             $(this).velocity({
                 height: '500px'
             }, {
@@ -102,8 +123,14 @@ $(document).ready(function () {
         closePaper(paper);
     });
 
+    $(document).on("click", "#menu-icon", function() {
+     showMenu();   
+    });
+    $(window).on('resize',function(){
+        refreshMenu(); 
+    });
     
-    $(document).on("click", '.star', function () {
+    $(document).on("click", '.star', function() {
         if ($(this).hasClass('star-active')) {
             $(this).removeClass('star-active');
             $(this).addClass('star-inactive');
