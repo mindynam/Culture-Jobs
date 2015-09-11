@@ -7,19 +7,21 @@
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body ng-app="myApp">
     <nav>
-        <a class="logo" href="#">CULT<span id="ure">URE</span></a>
+        <a href="#">
+            <img src = "logo@2x.png" class="logo">
+        </a>
         <div id="menu-icon">&#9776;</div>
-		</div>
         <ul>
-            <li><a href="/html/">NEW</a></li>
+            <li><a href="#" id="act">NEW</a></li>
             <li><a href="#">FOR YOU (23)</a></li>
             <li><a href="#">STARRED</a></li>
             <li><a href="#">SIGN OUT</a></li>
@@ -29,126 +31,63 @@
         <div class="search-wrapper">
 
             <input type="text" name="keyword" placeholder="Job Title / Keyword">
-            <input type="text" name="location" placeholder="Location">
+            <input type="text" name="location" placeholder="Location" value="New York, NY">
             <button class="search-button">
                 Search
                 <img src="search-icon.png" class="search-icon"/>
             </button>
         </div>
     </div>
-    <div class="main-section">
+    <div class="main-section" ng-controller="MainController">
         <span class="listing-title">New Jobs in New York, NY</span>
-        <span class="update-time"> - Updated 8/18/2015 03:00PM</span>
-        <div class="job-post">
-            <span class="date-time">Posted 8/18/2015 02:30PM</span>
-            <span class="star">★</span>
+        </span><span class="update-time"> - Updated 8/18/2015 03:00PM</span>
+        <div class="job-post" ng-repeat="job in jobs">
+         
+            <span class="date-time">Posted {{job.dateTime}}</span>
+            <span class="star star-inactive">★</span>
             <br>
-            <span class="job-title">Associate Product Manager</span>
+            <span class="job-title">{{job.jobTitle}}</span>
             <span class="dash">-</span>
-            <a href = # class="company">FOURSQUARE</a>
+            <a href = # class="company">{{job.company}}</a>
             <br>
-            <button class="job-location">NEW YORK, NY</button>
-            <button class="job-type">FULL-TIME</button>
-            <button class="job-level">ENTRY-LEVEL</button>
-            <button class="salary-range">50K-70K</button>
+            <div class="tag-section">
+                <div class="tag-wrapper">
+                    <button class="job-location">{{job.jobLocation}}</button>
+                    <button class="job-type">{{job.jobType}}</button>
+                    <button class="job-level">{{job.jobLevel}}</button>
+                    <button class="salary-range">{{job.salary}}</button>
+                </div>
+            </div>
             <div class="paper">
                 <div class="description-wrapper">
-                    <div class="description"><h4>About Foursquare:</h4><p>
-Foursquare helps you and your friends make the most of where you are. We're a small but highly ambitious company with millions of users worldwide relying on Foursquare to keep up with friends, discover what's nearby, save money and unlock deals. </p>
-                       <p>
-
-To thrive as a member of Team Foursquare, you must embrace our exciting work-hard, play-hard environment. We're not afraid to move fast and break things as we release, launch, iterate, update and announce -- sometimes all in the same day. We're a closely-knit team and, especially at the end of a long day over beers, we feel like we're inventing the future together.
-                        </p>
-                       
-                        <h4>
-                            Consumer Products at Foursquare:</h4><p>
-
-Foursquare’s mission is to help you make the most of where you are. The big question is how. Is it by being more social, with better ways to keep up with your friends? Or do we focus on motivation, getting people exploring more? What about fun; should we reward people for experiencing new things? As our next PM, you get to help us answer these questions and come up with new ways for people to discover what’s around them. 
-                        </p>
-                        <h4>
-                            Responsibilities:</h4><p>
-Understand and analyze user needs through user studies, market research, and data analysis
-Help define product vision and strategy, and build consensus among multiple teams like engineering, design, marketing, and business development.</p><p>
-Launch fast and iterate often with a team of the world-class engineers and designers
-Create and analyze metrics for products that you constantly use to evaluate success and come up with new product improvements
-                        </p>
-                        <h4>Requirements:</h4>
-                        <p>
-1-3 years experience in Product Management and / or Product Design developing Internet technologies 
-BA/BS in Computer Science, Interaction Design, or a related field (technical experience is required; while you won’t be writing code you should understand the technical implications of the product decisions you make)
-Experience designing simple and intuitive web/mobile user interfaces; ability to create examples through wire frames and mock ups</p><p>
-Demonstrated experience planning and executing large-scale projects
-Strong analytical, organizational, and communication skills (verbal & written).  
-Passion for foursquare and location-based services
-Bonus points for experience developing mobile, social, local and/or gaming technologies
-                        </p><p>
-                        To apply, send us your resume and a quick note about why you’re passionate about building consumer products at Foursquare.</p>
+                    <div class="description" ng-bind-html="job.description">
+                    </div>
                 <div class="apply-wrapper">
                     <button class="apply">APPLY NOW</button>
+                    <button class="star-button">SAVE THIS</button>
                         </div>
-                    </div></div>
+                    </div>
                 <button class="see-more"><span class="down-triangle">▼</span>  See More  <span class="down-triangle">▼</span></button>
             </div>    
         </div>
-        <div class="job-post"></div>
-        <div class="job-post"></div>
-        <div class="job-post"></div>
     </div>
+<div class="overlay"></div>
+<div class="menu-overlay"></div>
     
 <script src="jquery-2.1.4.min.js"></script>  
-    
+<script src="velocity.min.js"></script>
 
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
     <script src="main.js"></script>
-    <script>
-//        functions!
-        cursorChange = function(element){
-            $(element).mouseover(function(){    
-                $(this).css('cursor','pointer');
-        });
-        }
-        cursorChange('.star');
-        
-        
-        $(document).ready(function(){
-            var i = 0;
-            var j = 0;
-            var t = 500;
-            $('.see-more').click(function(){    
-                if (i%2 ==0){
-                    var dHeight = $('.description').height();
-                    var mtop = $('.job-post').css('margin-top');
-                    $(this).parent().animate({height:dHeight+80},t);
-                    $('.description-wrapper').animate({height:dHeight+10},t);
-                    $('.see-more').html('<span class="down-triangle" style="color:#acacac">▲</span>  SEE LESS  <span class="down-triangle" style="color:#acacac">▲</span>');
-                    $('.see-more').css('color','#acacac');
-                    $(this).parent().parent().next().animate({'marginTop':dHeight-40},t);
-                }
-                else{
 
-                    $(this).parent().animate({height:'143px'},t);                            
-                    $('.description-wrapper').animate({height:'73px'},t);
-                    $('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
-                    $('.see-more').css('color','#DF550A');
-                    $(this).parent().parent().next().animate({'marginTop':20},t);
-                }
-                i++;
-                });
-            $('.star').click(function(){
-                if (j%2 ==0){
-                    $(this).css('color','#DF550A');
-                }
-                else{
-                    $(this).css('color','#ACACAC');
-                }
-                j++;
-            });
-        });
-    
-    </script>    
-     
+    <script src="angular.min.js"></script>
+        <!-- Modules -->
+    <script src="app.js"></script>
+
+    <!-- Controllers -->
+    <script src="MainController.js"></script>
 
 </body>
 </html>

@@ -1,46 +1,142 @@
+// Variables
 
-//        functions!
+var t = 500;
+var pHeight, wHeight;
+
+// Functions!
 var cursorChange = function (element) {
-    $(element).mouseover(function(){    
-        $(this).css('cursor','pointer');
-});
+    $(document).on("mouseover", element, function () {
+        $(this).css('cursor', 'pointer');
+    });
 }
-cursorChange('.star');
+
+var showOverlay = function (paper) {
+    $(".overlay").insertAfter($(paper).parent());
+    $(".overlay").show();
+    $(paper).parent().css("z-index", "2");
+}
+
+var hideOverlay = function (paper) {
+    $(".overlay").insertAfter($(paper).parent());
+    $(".overlay").hide();
+    setTimeout(function () {
+        $(paper).parent().css("z-index", "0");
+    }, 500);
+}
+
+var showMenu = function(){
+    if ($(".menu-overlay").hasClass(".menu-active")){
+        $(".menu-overlay").fadeOut(t);
+        $(".menu-overlay").removeClass(".menu-active");
+        $("ul").fadeOut(t);
+        }
+    else{
+        $(".menu-overlay").fadeIn(t);
+        $(".menu-overlay").addClass(".menu-active");
+        $("ul").fadeIn(t);
+    }
+}
+
+var closePaper = function (paper){
+    $('body').css('overflow', 'auto');
+    paper.velocity({
+        height: pHeight
+    }, {
+        duration: t - 300,
+        easing: "easeInSine"
+    });
+    paper.css("overflow", "hidden");
+    paper.children('.description-wrapper').velocity({
+        height: wHeight
+    }, {
+        duration: t - 300,
+        easing: "easeInSine"
+    });
+    paper.children('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
+    paper.children('.see-more').css('color', '#DF550A');
+    paper.removeClass('expanded');
+    paper.children('.see-more').removeClass('see-less');
+    hideOverlay(paper);
+}
 
 
-$(document).ready(function(){
-    var i = 0;
-    var j = 0;
-    var t = 500;
-    $('.see-more').click(function(){    
-        if (i%2 ===0){
-            var dHeight = $('.description').height();
-            var mtop = $('.job-post').css('margin-top');
-            $(this).parent().animate({height:dHeight+80},t);
-            $('.description-wrapper').animate({height:dHeight+10},t);
-            $('.see-more').html('<span class="down-triangle" style="color:#acacac">▲</span>  SEE LESS  <span class="down-triangle" style="color:#acacac">▲</span>');
-            $('.see-more').css('color','#acacac');
-            $(this).parent().parent().next().animate({'marginTop':dHeight-40},t);
-        }
-        else {
+$(document).ready(function () {
+    pHeight= $('.paper').css('height');
+    wHeight= $('.description-wrapper').css('height');
+    cursorChange('#menu-icon');
+    cursorChange('.star');
 
-            $(this).parent().animate({height:'143px'},t);                            
-            $('.description-wrapper').animate({height:'73px'},t);
-            $('.see-more').html('<span class="down-triangle">▼</span>  SEE MORE  <span class="down-triangle">▼</span>');
-            $('.see-more').css('color','#DF550A');
-            $(this).parent().parent().next().animate({'marginTop':20},t);
+    var getPaper = function (overlay) {
+        return overlay.prev('.job-post').children('.paper');
+    }
+    var refreshMenu = function (){
+        if ($(window).width()>768){
+            $("ul").show();
         }
-        i++;
-        });
-    $('.star').click(function(){
-        if (j%2 ==0){
-            $(this).css('color','#DF550A');
+        else{
+            $("ul").hide();
         }
-        else {
-            $(this).css('color','#ACACAC');
+    }
+            
+    $(document).on("click", '.paper', function (e) {
+        if ($(this).hasClass('expanded')== false) {
+            e.preventDefault();
+            $('body').css('overflow', 'hidden');
+            $(this).children('.see-more').velocity("scroll", {
+                offset: -300,
+                duration: t,
+                easing: "easeOutSine"
+            });
+                var dHeight = ($(this).find('.description')).height();
+                var mtop = $('.job-post').css('margin-top');
+                
+            $(this).velocity({
+                height: '500px'
+            }, {
+                duration: t,
+                easing: "easeOutSine"
+            });
+            $(this).children('.description-wrapper').velocity({
+                height: dHeight + 80
+            }, {
+                duration: t,
+                easing: "easeOutSine"
+            });
+
+            $(this).css("overflow", "scroll");
+            $(this).children('.see-more').html('<span class="down-triangle" style="color:#acacac">▲</span>  SEE LESS  <span class="down-triangle" style="color:#acacac">▲</span>');
+            $(this).children('.see-more').css('color', '#acacac');
+            $(this).addClass('expanded');
+            $(this).children('.see-more').addClass('see-less');
+            showOverlay($(this));
         }
-        j++;
+    });
+
+    $(document).on("click", ".overlay", function () {
+        paper = getPaper($(this));
+        closePaper(paper);
+    });
+
+     $(document).on("click", ".see-less", function (e) {
+         e.stopPropagation();
+        paper = $(this).parent()
+        closePaper(paper);
+    });
+
+    $(document).on("click", "#menu-icon", function() {
+     showMenu();   
+    });
+    $(window).on('resize',function(){
+        refreshMenu(); 
+    });
+    
+    $(document).on("click", '.star', function() {
+        if ($(this).hasClass('star-active')) {
+            $(this).removeClass('star-active');
+            $(this).addClass('star-inactive');
+        } else {
+            $(this).removeClass('star-inactive');
+            $(this).addClass('star-active');
+        }
     });
 });
-
-
